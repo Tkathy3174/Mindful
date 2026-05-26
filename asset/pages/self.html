@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Help Tools - Mindful</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/self-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#7F22FE"/>
+                        <path d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="12" cy="12" r="2" fill="white"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-mindful">Mindful</span>
+                    <span class="logo-wellness">MENTAL WELLNESS</span>
+                </div>
+            </a>
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="health.html" class="nav-link">Understanding Mental Health</a>
+                <a href="stress.html" class="nav-link">Stress &amp; Anxiety</a>
+                <a href="self.html" class="nav-link active">Self-Help Tools</a>
+                <a href="support.html" class="nav-link">Get Support</a>
+            </nav>
+            <label for="hamburger-toggle" class="nav-overlay"></label>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero self-hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-icon">★</span>
+                        <span class="badge-text">Interactive Tools</span>
+                    </div>
+                    <h1 class="hero-heading">
+                        <span class="heading-line">Self-Help</span>
+                        <span class="heading-line gradient-text">Tools</span>
+                    </h1>
+                    <p class="hero-paragraph">
+                        Practical, evidence-based tools you can use anytime, anywhere to manage stress, anxiety, and improve your mental wellbeing.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#breathing" class="btn btn-primary">
+                            <span>Try Breathing Exercises</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#grounding" class="btn btn-outline">
+                            <span>Grounding Techniques</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-decoration">
+                    <div class="hero-image-placeholder">
+                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                            <circle cx="100" cy="80" r="40" fill="#EDE9FE"/>
+                            <ellipse cx="100" cy="160" rx="60" ry="30" fill="#EDE9FE"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breathing Exercises Section -->
+        <section class="breathing-exercises" id="breathing">
+            <div class="breathing-exercises-container">
+                <div class="breathing-exercises-header">
+                    <h2 class="breathing-exercises-title">Breathing Exercises</h2>
+                    <p class="breathing-exercises-subtitle">Simple breathing techniques to calm your mind and body instantly</p>
+                </div>
+                <div class="breathing-tools-grid">
+                    <div class="breathing-tool">
+                        <div class="tool-icon breathing-478">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>4-7-8 Breathing</h3>
+                        <p>Breathe in for 4 seconds, hold for 7, exhale for 8. Activates relaxation response.</p>
+                        <div class="tool-instructions">
+                            <h4>How to Practice:</h4>
+                            <ol>
+                                <li>Find a comfortable position</li>
+                                <li>Inhale through nose for 4 counts</li>
+                                <li>Hold breath for 7 counts</li>
+                                <li>Exhale through mouth for 8 counts</li>
+                                <li>Repeat 3-4 times</li>
+                            </ol>
+                        </div>
+                        <button class="tool-btn" onclick="startBreathing('478')">
+                            <span>Start Exercise</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="breathing-tool">
+                        <div class="tool-icon breathing-box">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Box Breathing</h3>
+                        <p>Breathe in square pattern: 4 seconds in, 4 hold, 4 out, 4 hold. Excellent for focus.</p>
+                        <div class="tool-instructions">
+                            <h4>How to Practice:</h4>
+                            <ol>
+                                <li>Visualize a square as you breathe</li>
+                                <li>Inhale while tracing up one side (4 counts)</li>
+                                <li>Hold while tracing across top (4 counts)</li>
+                                <li>Exhale while tracing down other side (4 counts)</li>
+                                <li>Hold while tracing bottom (4 counts)</li>
+                                <li>Complete 4-8 cycles</li>
+                            </ol>
+                        </div>
+                        <button class="tool-btn" onclick="startBreathing('box')">
+                            <span>Start Exercise</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="breathing-tool">
+                        <div class="tool-icon breathing-diaphragm">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Diaphragmatic Breathing</h3>
+                        <p>Deep belly breathing that reduces stress and improves oxygenation. Great for anxiety relief.</p>
+                        <div class="tool-instructions">
+                            <h4>How to Practice:</h4>
+                            <ol>
+                                <li>Lie on your back with knees bent</li>
+                                <li>Place one hand on chest, other on belly</li>
+                                <li>Breathe so belly rises, not chest</li>
+                                <li>Practice for 5-10 minutes daily</li>
+                            </ol>
+                        </div>
+                        <button class="tool-btn" onclick="startBreathing('diaphragm')">
+                            <span>Start Exercise</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grounding Techniques Section -->
+        <section class="grounding-techniques" id="grounding">
+            <div class="grounding-techniques-container">
+                <div class="grounding-techniques-header">
+                    <h2 class="grounding-techniques-title">Grounding Techniques</h2>
+                    <p class="grounding-techniques-subtitle">Stay present and connected to your body during overwhelming moments</p>
+                </div>
+                <div class="grounding-tools-grid">
+                    <div class="grounding-tool">
+                        <div class="tool-icon grounding-543">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>5-4-3-2-1 Grounding</h3>
+                        <p>Engage all 5 senses to bring yourself back to the present moment during anxiety or panic.</p>
+                        <div class="tool-instructions">
+                            <h4>Practice Steps:</h4>
+                            <ol>
+                                <li>Name <strong>5 things</strong> you can see</li>
+                                <li>Name <strong>4 things</strong> you can touch</li>
+                                <li>Name <strong>3 things</strong> you can hear</li>
+                                <li>Name <strong>2 things</strong> you can smell</li>
+                                <li>Name <strong>1 thing</strong> you can taste</li>
+                            </ol>
+                        </div>
+                        <button class="tool-btn" onclick="startGrounding('54321')">
+                            <span>Start Exercise</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="grounding-tool">
+                        <div class="tool-icon grounding-feet">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Feet on Ground</h3>
+                        <p>Feel your connection to the earth to reduce anxiety and feel more stable and centered.</p>
+                        <div class="tool-instructions">
+                            <h4>Practice Steps:</h4>
+                            <ol>
+                                <li>Stand or sit with feet flat on floor</li>
+                                <li>Focus on sensations in your feet</li>
+                                <li>Notice temperature, pressure, texture</li>
+                                <li>Imagine roots growing from feet into ground</li>
+                                <li>Practice for 2-3 minutes</li>
+                            </ol>
+                        </div>
+                        <button class="tool-btn" onclick="startGrounding('feet')">
+                            <span>Start Exercise</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="grounding-tool">
+                        <div class="tool-icon grounding-body">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Body Scan</h3>
+                        <p>Systematically bring awareness to different parts of your body to release tension and relax deeply.</p>
+                        <div class="tool-instructions">
+                            <h4>Practice Steps:</h4>
+                            <ol>
+                                <li>Start with toes and work upward</li>
+                                <li>Notice sensations without judgment</li>
+                                <li>Breathe into each body part</li>
+                                <li>Release tension as you exhale</li>
+                                <li>Complete full body scan in 10-20 minutes</li>
+                            </ol>
+                        </div>
+                        <button class="tool-btn" onclick="startGrounding('bodyscan')">
+                            <span>Start Exercise</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mindfulness Section -->
+        <section class="mindfulness-exercises">
+            <div class="mindfulness-exercises-container">
+                <div class="mindfulness-exercises-header">
+                    <h2 class="mindfulness-exercises-title">Mindfulness Exercises</h2>
+                    <p class="mindfulness-exercises-subtitle">Cultivate present-moment awareness and reduce stress through focused attention</p>
+                </div>
+                <div class="mindfulness-tools-grid">
+                    <div class="mindfulness-tool">
+                        <div class="tool-icon mindfulness-meditation">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Mindful Meditation</h3>
+                        <p>Focus attention on breath, thoughts, and sensations without judgment. Builds emotional regulation.</p>
+                        <div class="tool-instructions">
+                            <h4>Getting Started:</h4>
+                            <ul>
+                                <li>Find a quiet, comfortable space</li>
+                                <li>Set timer for 5-10 minutes</li>
+                                <li>Focus on your breath as an anchor</li>
+                                <li>When mind wanders, gently return to breath</li>
+                                <li>Practice daily for best results</li>
+                            </ul>
+                        </div>
+                        <button class="tool-btn" onclick="startMindfulness('meditation')">
+                            <span>Start Session</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="mindfulness-tool">
+                        <div class="tool-icon mindfulness-observation">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Mindful Observation</h3>
+                        <p>Notice your surroundings with fresh eyes, as if seeing them for the first time. Enhances awareness.</p>
+                        <div class="tool-instructions">
+                            <h4>Practice Steps:</h4>
+                            <ul>
+                                <li>Choose an object in your environment</li>
+                                <li>Observe it with curiosity, not judgment</li>
+                                <li>Notice colors, shapes, textures, shadows</li>
+                                <li>Observe your reactions to the object</li>
+                                <li>Practice for 2-3 minutes</li>
+                            </ul>
+                        </div>
+                        <button class="tool-btn" onclick="startMindfulness('observation')">
+                            <span>Start Exercise</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="mindfulness-tool">
+                        <div class="tool-icon mindfulness-gratitude">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Gratitude Practice</h3>
+                        <p>Regularly reflect on things you're grateful for. Shifts focus from negative to positive aspects of life.</p>
+                        <div class="tool-instructions">
+                            <h4>Daily Practice:</h4>
+                            <ul>
+                                <li>Write down 3 things you're grateful for</li>
+                                <li>Be specific about why you're grateful</li>
+                                <li>Include small pleasures and big blessings</li>
+                                <li>Review your list weekly</li>
+                                <li>Share gratitude with others when possible</li>
+                            </ul>
+                        </div>
+                        <button class="tool-btn" onclick="startMindfulness('gratitude')">
+                            <span>Start Practice</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Tracking Section -->
+        <section class="progress-tracking">
+            <div class="progress-tracking-container">
+                <div class="progress-tracking-header">
+                    <h2 class="progress-tracking-title">Track Your Progress</h2>
+                    <p class="progress-tracking-subtitle">Monitor your mental wellness journey and celebrate your achievements</p>
+                </div>
+                <div class="progress-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Day Streak</div>
+                        <div class="stat-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <div class="stat-number">24</div>
+                        <div class="stat-label">Sessions Completed</div>
+                        <div class="stat-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Stress Reduced</div>
+                        <div class="stat-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-actions">
+                    <button class="progress-btn" onclick="viewDetailedProgress()">
+                        <span>View Detailed Progress</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 8H12M12 8L8 4M12 8L8 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="progress-btn" onclick="setNewGoal()">
+                        <span>Set New Goal</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M12 5V11M12 11L8 7M12 11L16 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Tools Section -->
+        <section class="emergency-tools">
+            <div class="emergency-tools-container">
+                <div class="emergency-tools-header">
+                    <h2 class="emergency-tools-title">Emergency Tools</h2>
+                    <p class="emergency-tools-subtitle">Quick access to crisis resources and immediate help when you need it most</p>
+                </div>
+                <div class="emergency-grid">
+                    <div class="emergency-card crisis-card">
+                        <div class="emergency-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Panic Button</h3>
+                        <p>Immediate grounding exercise for panic attacks. Press when overwhelmed.</p>
+                        <button class="emergency-btn" onclick="activatePanicButton()">
+                            <span>Activate Now</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="emergency-card">
+                        <div class="emergency-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>SOS Contacts</h3>
+                        <p>Quick dial emergency contacts and crisis hotlines. One-touch access to help.</p>
+                        <div class="sos-contacts">
+                            <button class="sos-btn" onclick="call988()">
+                                <span>Call 000</span>
+                            </button>
+                            <button class="sos-btn" onclick="textCrisis()">
+                                <span>Text HOME to 000000</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="emergency-card">
+                        <div class="emergency-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Safety Plan</h3>
+                        <p>Your personalized crisis plan with coping strategies and support contacts.</p>
+                        <button class="emergency-btn" onclick="viewSafetyPlan()">
+                            <span>View Plan</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M4 8H12M12 8L8 4M12 8L8 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources-section">
+            <div class="resources-section-container">
+                <div class="resources-section-header">
+                    <h2 class="resources-section-title">Additional Resources</h2>
+                    <p class="resources-section-subtitle">Expand your self-help toolkit with these recommended resources</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <div class="resource-icon resource-apps">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Recommended Apps</h3>
+                        <p>Top-rated mental wellness apps for meditation, mood tracking, and cognitive behavioral therapy.</p>
+                        <a href="support.html#support-resources" class="resource-link">
+                            <span>Browse Apps</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#7F22FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="resource-item">
+                        <div class="resource-icon resource-books">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Workbooks & Guides</h3>
+                        <p>Evidence-based workbooks and self-help guides for specific mental health concerns.</p>
+                        <a href="support.html#support-resources" class="resource-link">
+                            <span>Explore Resources</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#7F22FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="resource-item">
+                        <div class="resource-icon resource-community">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3>Support Communities</h3>
+                        <p>Online support groups and forums where you can connect with others on similar journeys.</p>
+                        <a href="support.html#community-support" class="resource-link">
+                            <span>Join Communities</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#7F22FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" fill="#7F22FE"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-mindful">Mindful</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Your trusted companion for mental health education and support. Together, we break the stigma.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-list">
+                        <li><a href="health.html">Understanding Mental Health</a></li>
+                        <li><a href="stress.html">Stress & Anxiety</a></li>
+                        <li><a href="self.html">Self-Help Tools</a></li>
+                        <li><a href="support.html">Get Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-crisis">
+                    <h3 class="footer-heading">Crisis Support</h3>
+                    <p class="crisis-label">Available 24/7 for immediate help:</p>
+                    <div class="crisis-cards">
+                        <div class="crisis-card">
+                            <span class="crisis-title">Suicide & Crisis Lifeline</span>
+                            <span class="crisis-number">000</span>
+                        </div>
+                        <div class="crisis-card">
+                            <span class="crisis-title">Crisis Text Line</span>
+                            <span class="crisis-text">Text HOME to 000000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Mindful. Not a substitute for professional medical advice. Always consult a healthcare provider.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

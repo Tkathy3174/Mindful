@@ -1,0 +1,633 @@
+/* ================================================
+   STRESS PAGE - Stress & Anxiety
+   ================================================ */
+.stress-hero { 
+    background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 50%, #e9d5ff 100%); 
+}
+
+
+/* Understanding Stress */
+.understanding-stress { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.understanding-stress-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.understanding-stress-content { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.understanding-stress-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 2rem; 
+    color: #1a1a1a; 
+}
+
+.understanding-stress-text { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    line-height: 1.7; 
+    margin-bottom: 1.5rem; 
+}
+
+.stress-types { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+    margin-top: 3rem; 
+}
+
+.stress-type-card {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stress-type-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.stress-type-icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto 1.5rem;
+}
+
+.stress-acute { 
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%); 
+}
+
+.stress-chronic { 
+    background: linear-gradient(135deg, #EF4444 0%, #F87171 100%); 
+}
+
+.stress-episodic { 
+    background: linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%); 
+}
+
+.stress-type-card h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.stress-type-card p { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+}
+
+/* Causes */
+.causes { 
+    padding: 4rem 2rem; 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+.causes-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.causes-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.causes-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.causes-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.causes-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem; 
+}
+
+.cause-card {
+    background: white; 
+    border-radius: 16px; 
+    padding: 2rem;
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cause-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.cause-icon {
+    width: 48px; 
+    height: 48px; 
+    background: rgba(127, 34, 254, 0.1);
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.5rem;
+}
+
+.cause-card h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.cause-card ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.cause-card li {
+    color: #6b7280; 
+    font-size: 0.9rem; 
+    line-height: 1.5;
+    margin-bottom: 0.5rem; 
+    padding-left: 1rem; 
+    position: relative;
+}
+
+.cause-card li::before { 
+    content: '•'; 
+    color: #7F22FE; 
+    font-weight: bold; 
+    position: absolute; 
+    left: 0; 
+}
+
+/* Symptoms */
+.symptoms { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.symptoms-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.symptoms-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.symptoms-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.symptoms-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.symptoms-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2rem; 
+}
+
+.symptom-category {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.symptom-category:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.symptom-icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.5rem;
+}
+
+.physical { 
+    background: linear-gradient(135deg, #EF4444 0%, #F87171 100%); 
+}
+
+.emotional { 
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%); 
+}
+
+.cognitive { 
+    background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%); 
+}
+
+.behavioral { 
+    background: linear-gradient(135deg, #10B981 0%, #34D399 100%); 
+}
+
+.symptom-category h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.symptom-category ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.symptom-category li {
+    color: #6b7280; 
+    font-size: 0.9rem; 
+    line-height: 1.5;
+    margin-bottom: 0.5rem; 
+    padding-left: 1rem; 
+    position: relative;
+}
+
+.symptom-category li::before { 
+    content: '•'; 
+    color: #7F22FE; 
+    font-weight: bold; 
+    position: absolute; 
+    left: 0; 
+}
+
+/* Coping Strategies */
+.coping-strategies { 
+    padding: 4rem 2rem; 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+.coping-strategies-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.coping-strategies-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.coping-strategies-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.coping-strategies-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.coping-strategies-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem; 
+}
+
+.strategy-card {
+    background: white; 
+    border-radius: 16px; 
+    padding: 2rem;
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.strategy-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.strategy-icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 12px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #7F22FE 0%, #A855F7 100%);
+}
+
+.strategy-card h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.strategy-card p { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+.strategy-tips { 
+    background: rgba(127, 34, 254, 0.05); 
+    border-radius: 8px; 
+    padding: 1rem; 
+}
+
+.strategy-tips h4 { 
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    color: #7F22FE; 
+    margin-bottom: 0.75rem; 
+}
+
+.strategy-tips ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.strategy-tips li {
+    color: #6b7280; 
+    font-size: 0.875rem; 
+    line-height: 1.5;
+    margin-bottom: 0.5rem; 
+    padding-left: 1rem; 
+    position: relative;
+}
+
+.strategy-tips li::before { 
+    content: '•'; 
+    color: #7F22FE; 
+    font-weight: bold; 
+    position: absolute; 
+    left: 0; 
+}
+
+/* Relaxation Techniques */
+.relaxation-techniques { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.relaxation-techniques-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.relaxation-techniques-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.relaxation-techniques-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.relaxation-techniques-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.techniques-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
+    gap: 2rem; 
+}
+
+.technique-card {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    position: relative;
+}
+
+.technique-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.technique-number {
+    position: absolute; 
+    top: -1rem; 
+    left: 2rem; 
+    width: 2rem; 
+    height: 2rem;
+    background: linear-gradient(135deg, #7F22FE 0%, #A855F7 100%); color: white;
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-weight: 700; 
+    font-size: 0.875rem;
+}
+
+.technique-card h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.technique-steps { 
+    margin-bottom: 1.5rem; 
+}
+
+.technique-steps h4 { 
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    color: #7F22FE; 
+    margin-bottom: 0.75rem; 
+}
+
+.technique-steps ol { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    counter-reset: technique-counter; /* Reset counter for ordered list */
+}
+
+.technique-steps li {
+    color: #6b7280; 
+    font-size: 0.875rem; 
+    line-height: 1.5;
+    margin-bottom: 0.5rem; 
+    padding-left: 1.5rem; 
+    position: relative;
+}
+
+.technique-steps li::before {
+    counter-increment: technique-counter; /* Increment counter for each list item */
+    content: counter(technique-counter) "."; /* Display the counter value followed by a period */
+    color: #7F22FE; 
+    font-weight: bold; 
+    position: absolute; 
+    left: 0;
+}
+
+.technique-benefit { 
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 8px; 
+    padding: 0.75rem; 
+    font-size: 0.875rem; 
+    color: #065f46; 
+}
+
+.technique-benefit strong { 
+    color: #10B981; 
+    font-weight: 600; 
+}
+
+
+/* Seek Help */
+.seek-help { 
+    padding: 4rem 2rem; 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+.seek-help-container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.seek-help-content { 
+    text-align: center; 
+}
+
+.seek-help-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1.5rem; 
+    color: #1a1a1a; 
+}
+
+.seek-help-text { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    line-height: 1.7; 
+    margin-bottom: 3rem; 
+}
+
+.help-indicators { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 1.5rem; 
+    margin-bottom: 3rem; 
+}
+
+.help-indicator {
+    background: white; 
+    border-radius: 12px; 
+    padding: 1.5rem;
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-indicator:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 8px 16px rgba(127, 34, 254, 0.15); 
+}
+
+.help-icon {
+    width: 48px; 
+    height: 48px; 
+    background: rgba(127, 34, 254, 0.1);
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto 1rem;
+}
+
+.help-indicator p { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.5; 
+    margin: 0; 
+}
+
+.help-actions {
+    background: white; 
+    border-radius: 16px; 
+    padding: 2rem;
+    border: 1px solid rgba(127, 34, 254, 0.1);
+}
+
+.help-actions h3 { 
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    margin-bottom: 1.5rem; 
+    color: #1a1a1a; 
+}
+
+.action-buttons { 
+    display: flex; 
+    gap: 1rem; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stress-types, .causes-grid, .symptoms-grid, 
+    .coping-strategies-grid, .techniques-grid, .help-indicators { 
+        grid-template-columns: 1fr; 
+    }
+
+    .action-buttons { 
+        flex-direction: column; 
+        align-items: center; }
+}
+@media (max-width: 480px) {
+    .understanding-stress-title, .causes-title, 
+    .symptoms-title, .coping-strategies-title,
+    .relaxation-techniques-title, .seek-help-title { 
+        font-size: 2rem; 
+    }
+
+    .stress-type-card, .cause-card, .symptom-category, 
+    .strategy-card, .technique-card, .help-indicator { 
+        padding: 1.5rem; 
+    }
+}

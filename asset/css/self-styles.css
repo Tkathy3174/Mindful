@@ -1,0 +1,664 @@
+/* ================================================
+   SELF-HELP TOOLS PAGE
+   ================================================ */
+.self-hero { 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+/* Breathing Exercises */
+.breathing-exercises { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.breathing-exercises-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.breathing-exercises-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.breathing-exercises-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.breathing-exercises-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.breathing-tools-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem; 
+}
+
+.breathing-tool {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.breathing-tool:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.breathing-478 { 
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%); 
+}
+
+.breathing-box { 
+    background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%); 
+}
+
+.breathing-diaphragm { 
+    background: linear-gradient(135deg, #10B981 0%, #34D399 100%); 
+}
+
+.tool-icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 12px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.5rem;
+}
+
+.breathing-tool h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.breathing-tool p { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+.tool-instructions { 
+    background: rgba(127, 34, 254, 0.05); 
+    border-radius: 8px; 
+    padding: 1rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.tool-instructions h4 { 
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    color: #7F22FE; 
+    margin-bottom: 0.75rem; 
+}
+
+.tool-instructions ol, .tool-instructions ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.tool-instructions li {
+    color: #6b7280; 
+    font-size: 0.875rem; 
+    line-height: 1.5;
+    margin-bottom: 0.5rem; 
+    padding-left: 1rem; 
+    position: relative;
+}
+
+.tool-instructions li::before { 
+    content: '•'; 
+    color: #7F22FE; 
+    font-weight: bold; 
+    position: absolute; 
+    left: 0; 
+}
+
+.tool-btn {
+    background: linear-gradient(135deg, #7F22FE 0%, #A855F7 100%); 
+    color: white; 
+    border: none;
+    border-radius: 8px; 
+    padding: 0.875rem 1.5rem; 
+    font-weight: 600; 
+    font-size: 1rem;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 0.5rem;
+}
+
+.tool-btn:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(127, 34, 254, 0.4); 
+}
+
+/* Grounding Techniques */
+.grounding-techniques { 
+    padding: 4rem 2rem; 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+.grounding-techniques-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.grounding-techniques-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.grounding-techniques-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.grounding-techniques-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.grounding-tools-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem; 
+}
+
+.grounding-tool {
+    background: white; 
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grounding-tool:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.grounding-543 { 
+    background: linear-gradient(135deg, #EF4444 0%, #F87171 100%); 
+}
+
+.grounding-feet { 
+    background: linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%); 
+}
+
+.grounding-body { 
+    background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%); 
+}
+
+.grounding-tool h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.grounding-tool p { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+/* Mindfulness Exercises */
+.mindfulness-exercises { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.mindfulness-exercises-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.mindfulness-exercises-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.mindfulness-exercises-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.mindfulness-exercises-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.mindfulness-tools-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem; 
+}
+
+.mindfulness-tool {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mindfulness-tool:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.mindfulness-meditation { 
+    background: linear-gradient(135deg, #7F22FE 0%, #A855F7 100%); 
+}
+
+.mindfulness-observation { 
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%); 
+}
+
+.mindfulness-gratitude { 
+    background: linear-gradient(135deg, #10B981 0%, #34D399 100%); 
+}
+
+.mindfulness-tool h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.mindfulness-tool p { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+/* Progress Tracking */
+.progress-tracking { 
+    padding: 4rem 2rem; 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+.progress-tracking-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.progress-tracking-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.progress-tracking-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.progress-tracking-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.progress-stats { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 2rem; 
+    margin-bottom: 3rem; 
+}
+
+.progress-tracking .stat-card {
+    background: white; 
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.progress-tracking .stat-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.progress-tracking .stat-icon {
+    width: 48px; 
+    height: 48px; 
+    background: rgba(127, 34, 254, 0.1); 
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto 1rem;
+}
+
+.progress-tracking .stat-number { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: #7F22FE; 
+    margin-bottom: 0.5rem; 
+}
+
+.stat-label { 
+    font-size: 1rem; 
+    font-weight: 600; 
+    color: #1a1a1a; 
+    margin-bottom: 1rem; 
+}
+
+.stat-progress { 
+    margin-top: 1rem; 
+}
+
+.progress-bar { 
+    background: rgba(127, 34, 254, 0.1); 
+    border-radius: 4px; 
+    height: 8px; 
+    overflow: hidden;
+}
+
+.progress-fill { 
+    background: linear-gradient(90deg, #7F22FE 0%, #A855F7 100%); 
+    height: 100%; 
+    border-radius: 4px; 
+    transition: width 0.3s ease; 
+}
+
+.progress-actions { 
+    display: flex; 
+    gap: 1rem; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.progress-btn {
+    background: white; 
+    color: #7F22FE; 
+    border: 2px solid #7F22FE; 
+    border-radius: 8px;
+    padding: 0.875rem 1.5rem; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 0.5rem;
+}
+
+.progress-btn:hover { 
+    background: #7F22FE; 
+    color: white; 
+}
+
+/* Emergency Tools */
+.emergency-tools { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.emergency-tools-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.emergency-tools-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.emergency-tools-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.emergency-tools-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.emergency-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
+    gap: 2rem; 
+}
+
+.emergency-card {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emergency-card:hover { 
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.emergency-tools .emergency-card.crisis-card {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border-color: rgba(127, 34, 254, 0.1);
+}
+
+.emergency-icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 12px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #7F22FE 0%, #A855F7 100%);
+}
+
+.emergency-card h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.emergency-card p { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+.emergency-btn {
+    background: linear-gradient(135deg, #EF4444 0%, #F87171 100%); 
+    color: white; 
+    border: none;
+    border-radius: 8px; 
+    padding: 0.875rem 1.5rem; 
+    font-weight: 600; 
+    font-size: 1rem;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    display: inline-flex;
+    align-items: center; 
+    gap: 0.5rem; 
+    width: 100%;
+}
+
+.emergency-btn:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4); 
+}
+
+.sos-contacts { 
+    display: flex; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+.sos-btn {
+    background: linear-gradient(135deg, #7F22FE 0%, #A855F7 100%); 
+    color: white; 
+    border: none;
+    border-radius: 8px; 
+    padding: 0.75rem 1rem; 
+    font-weight: 600; 
+    font-size: 0.875rem;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    flex: 1;
+}
+
+.sos-btn:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(127, 34, 254, 0.4); 
+}
+
+/* Resources Section */
+.resources-section { 
+    padding: 4rem 2rem; 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+.resources-section-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.resources-section-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.resources-section-title { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.resources-section-subtitle { 
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.resources-section .resources-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
+    gap: 2rem; 
+}
+
+.resource-item {
+    background: white; 
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-item:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.resource-icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 12px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.5rem;
+}
+
+.resource-apps { 
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%); 
+}
+
+.resource-books { 
+    background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%); 
+}
+
+.resource-community { 
+    background: linear-gradient(135deg, #10B981 0%, #34D399 100%); 
+}
+
+.resource-item h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.resource-item p { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+.resource-link {
+    display: inline-flex; 
+    align-items: center; 
+    gap: 0.5rem;
+    color: #7F22FE; 
+    text-decoration: none; 
+    font-weight: 600; 
+    transition: color 0.3s ease;
+}
+
+.resource-link:hover { color: #A855F7; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .breathing-tools-grid, .grounding-tools-grid, .mindfulness-tools-grid,
+    .progress-stats, .emergency-grid, .resources-section .resources-grid { 
+        grid-template-columns: 1fr; 
+    }
+
+    .progress-actions { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+@media (max-width: 480px) {
+    .breathing-exercises-title, .grounding-techniques-title, .mindfulness-exercises-title,
+    .progress-tracking-title, .emergency-tools-title, .resources-section-title { 
+        font-size: 2rem; 
+    }
+
+    .breathing-tool, .grounding-tool, .mindfulness-tool, .stat-card,
+    .emergency-card, .resource-item { 
+        padding: 1.5rem; 
+    }
+}

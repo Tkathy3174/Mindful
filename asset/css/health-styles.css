@@ -1,0 +1,372 @@
+/* ================================================
+   HEALTH PAGE - Understanding Mental Health
+   ================================================ */
+.health-hero { 
+    background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 50%, #e9d5ff 100%); 
+}
+
+/* Overview */
+.overview { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.overview-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.overview-content { 
+    max-width: 900px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.overview-title, .conditions-title, .warning-signs-title, .myths-facts-title, .next-steps-title {
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a;
+}
+
+.overview-text, .conditions-subtitle, .warning-signs-subtitle, .myths-facts-subtitle, .next-steps-text {
+    font-size: 1.125rem; 
+    color: #6b7280; 
+    line-height: 1.7; 
+    max-width: 720px; 
+    margin: 0 auto 1.5rem;
+}
+
+.overview-stats { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    margin-top: 3rem; 
+}
+
+.overview-stats .stat-item {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px; 
+    padding: 2rem;
+}
+
+.overview-stats .stat-number { 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: #7F22FE; 
+    margin-bottom: 0.5rem; 
+}
+
+.overview-stats .stat-label { 
+    font-size: 0.95rem; 
+    font-weight: 500; 
+    color: #6b7280; 
+    line-height: 1.5; 
+}
+
+/* Conditions */
+.conditions { 
+    padding: 4rem 2rem; 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+.conditions-container, .warning-signs-container, .myths-facts-container, .next-steps-container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+.conditions-header, .warning-signs-header, .myths-facts-header { 
+    text-align: center; 
+    margin-bottom: 3rem; 
+}
+
+.conditions-badge {
+    display: inline-flex; 
+    align-items: center; 
+    background: rgba(127, 34, 254, 0.1);
+    border: 1px solid rgba(127, 34, 254, 0.2); 
+    border-radius: 50px;
+    padding: 0.5rem 1rem; 
+    margin-bottom: 1.5rem; 
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    color: #7F22FE;
+}
+
+.conditions-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem; 
+}
+
+.condition-card {
+    background: white; 
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.condition-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.condition-icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 12px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.5rem;
+}
+
+.condition-anxiety { 
+    background: linear-gradient(135deg, #7F22FE 0%, #A855F7 100%); 
+}
+
+.condition-depression { 
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%); 
+}
+
+.condition-bipolar { 
+    background: linear-gradient(135deg, #EC4899 0%, #F472B6 100%); 
+}
+
+.condition-ptsd { 
+    background: linear-gradient(135deg, #EF4444 0%, #F87171 100%); 
+}
+
+.condition-ocd { 
+    background: linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%); 
+}
+
+.condition-eating { 
+    background: linear-gradient(135deg, #10B981 0%, #34D399 100%); 
+}
+
+.condition-title { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+.condition-description { 
+    color: #6b7280; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+.condition-symptoms { 
+    background: rgba(127, 34, 254, 0.05); 
+    border-radius: 8px; 
+    padding: 1rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.condition-symptoms h4 { 
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    color: #7F22FE; 
+    margin-bottom: 0.75rem; 
+}
+
+.condition-symptoms ul, .warning-card ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.condition-symptoms li, .warning-card li {
+    color: #6b7280; 
+    font-size: 0.875rem; 
+    line-height: 1.5;
+    margin-bottom: 0.5rem; 
+    padding-left: 1rem; 
+    position: relative;
+}
+
+.condition-symptoms li::before, .warning-card li::before {
+    content: '\2022'; 
+    color: #7F22FE; 
+    font-weight: bold; 
+    position: absolute; 
+    left: 0;
+}
+
+.condition-link { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    color: #7F22FE; 
+    font-weight: 600; 
+}
+
+
+/* Warning Signs */
+.warning-signs { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.warning-signs-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2rem; 
+}
+
+.warning-card {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px;
+    padding: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.warning-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.warning-icon {
+    width: 48px; 
+    height: 48px; 
+    background: rgba(127, 34, 254, 0.1);
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.5rem;
+}
+
+.warning-card h3 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    margin-bottom: 1rem; 
+    color: #1a1a1a; 
+}
+
+
+/* Myths vs Facts */
+.myths-facts { 
+    padding: 4rem 2rem; 
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%); 
+}
+
+.myths-facts-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    gap: 2rem; 
+}
+
+.myth-fact-card {
+    background: white; 
+    border: 1px solid rgba(127, 34, 254, 0.1);
+    border-radius: 16px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myth-fact-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 12px 24px rgba(127, 34, 254, 0.15); 
+}
+
+.myth-section, .fact-section { 
+    padding: 1.5rem; 
+}
+
+.myth-section { 
+    background: #FEF2F2; 
+    border-bottom: 1px solid rgba(239, 68, 68, 0.12); 
+}
+
+.fact-section { 
+    background: #ECFDF5; 
+}
+
+.myth-label, .fact-label {
+    display: inline-flex; 
+    border-radius: 999px; 
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.75rem; 
+    font-size: 0.75rem; 
+    font-weight: 700; 
+    letter-spacing: 0.04em;
+}
+
+.myth-label { 
+    background: #FEE2E2; 
+    color: #DC2626; 
+}
+
+.fact-label { 
+    background: #D1FAE5; 
+    color: #059669; 
+}
+
+.myth-text, .fact-text { 
+    color: #374151; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+}
+
+/* Next Steps */
+.next-steps { 
+    padding: 4rem 2rem; 
+    background: white; 
+}
+
+.next-steps-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center;
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border: 1px solid rgba(127, 34, 254, 0.1); 
+    border-radius: 16px; 
+    padding: 3rem;
+}
+
+.next-steps-buttons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .overview-stats, .conditions-grid, .warning-signs-grid, .myths-facts-grid { 
+        grid-template-columns: 1fr; 
+    }
+
+    .next-steps-content { 
+        padding: 2rem; 
+    }
+
+    .next-steps-buttons { 
+        flex-direction: column; 
+    }
+}
+@media (max-width: 480px) {
+    .overview-title, .conditions-title, .warning-signs-title, .myths-facts-title, .next-steps-title { 
+        font-size: 2rem; 
+    }
+
+    .overview-stats .stat-item, .condition-card, .warning-card { 
+        padding: 1.5rem; 
+    }
+
+    .myth-section, .fact-section { 
+        padding: 1.25rem; 
+    }
+
+    .next-steps-content { 
+        padding: 1.5rem; 
+    }
+}

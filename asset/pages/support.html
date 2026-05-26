@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Mindful Mental Wellness</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/support-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo-link">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#7F22FE"/>
+                        <path d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="12" cy="12" r="2" fill="white"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-mindful">Mindful</span>
+                    <span class="logo-wellness">MENTAL WELLNESS</span>
+                </div>
+            </a>
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="health.html" class="nav-link">Understanding Mental Health</a>
+                <a href="stress.html" class="nav-link">Stress &amp; Anxiety</a>
+                <a href="self.html" class="nav-link">Self-Help Tools</a>
+                <a href="support.html" class="nav-link active">Get Support</a>
+            </nav>
+            <label for="hamburger-toggle" class="nav-overlay"></label>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="support-hero">
+            <div class="support-hero-container">
+                <div class="support-hero-content">
+                    <div class="support-hero-badge">
+                        <span class="badge-icon">🆘</span>
+                        <span class="badge-text">24/7 Support Available</span>
+                    </div>
+                    <h1 class="support-hero-heading">
+                        <span class="heading-line">You're Not</span>
+                        <span class="heading-line gradient-text">Alone</span>
+                    </h1>
+                    <p class="support-hero-paragraph">
+                        Help is always available when you need it. Whether you're in crisis or just need someone to talk to, there are resources ready to support you.
+                    </p>
+                    <div class="support-hero-buttons">
+                        <button class="btn btn-primary" onclick="callCrisisLine()">
+                            <span>Call Crisis Line</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline" onclick="startChat()">
+                            <span>Start Chat</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="support-hero-decoration">
+                    <div class="support-hero-image">
+                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                            <circle cx="100" cy="80" r="40" fill="#EDE9FE"/>
+                            <ellipse cx="100" cy="160" rx="60" ry="30" fill="#EDE9FE"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crisis Support Section -->
+        <section class="crisis-support">
+            <div class="crisis-support-container">
+                <div class="crisis-support-header">
+                    <h2 class="crisis-support-title">Crisis Support</h2>
+                    <p class="crisis-support-subtitle">If you're in immediate danger or having thoughts of self-harm, please reach out now</p>
+                </div>
+                <div class="crisis-grid">
+                    <div class="crisis-card urgent">
+                        <div class="crisis-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 10V16M16 22H16.01" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="crisis-title">000 Suicide & Crisis Lifeline</h3>
+                        <p class="crisis-description">24/7, free, confidential support for people in distress</p>
+                        <button class="crisis-btn" onclick="call000()">Call Now</button>
+                    </div>
+                    <div class="crisis-card urgent">
+                        <div class="crisis-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="4" y="8" width="24" height="16" rx="2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 8V6C8 3.79086 9.79086 2 12 2C14.2091 2 16 3.79086 16 6V8M20 8V6C20 3.79086 21.7909 2 24 2C26.2091 2 28 3.79086 28 6V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 14L12 18M20 14L20 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="crisis-title">Crisis Text Line</h3>
+                        <p class="crisis-description">Text HOME to 000000 for free, 24/7 crisis support</p>
+                        <button class="crisis-btn" onclick="textCrisis()">Text Now</button>
+                    </div>
+                    <div class="crisis-card">
+                        <div class="crisis-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 8L16 16M8 16L24 16M16 16L16 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="8" r="2" fill="white"/>
+                                <circle cx="8" cy="16" r="2" fill="white"/>
+                                <circle cx="24" cy="16" r="2" fill="white"/>
+                                <circle cx="16" cy="24" r="2" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="crisis-title">Veterans Crisis Line</h3>
+                        <p class="crisis-description">Dial 000 then Press 1, or text 000000</p>
+                        <button class="crisis-btn" onclick="callVeterans()">Call Veterans</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Help Section -->
+        <section class="professional-help" id="professional-help">
+            <div class="professional-help-container">
+                <div class="professional-help-header">
+                    <h2 class="professional-help-title">Professional Help</h2>
+                    <p class="professional-help-subtitle">Connect with mental health professionals who can provide ongoing support</p>
+                </div>
+                <div class="professional-grid">
+                    <div class="professional-card">
+                        <div class="professional-icon therapy">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 16C12 13.7909 13.7909 12 16 12C18.2091 12 20 13.7909 20 16C20 18.2091 18.2091 20 16 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="professional-title">Find a Therapist</h3>
+                        <p class="professional-description">Connect with licensed therapists in your area or online</p>
+                        <div class="professional-options">
+                            <button class="professional-btn" onclick="findTherapist()">Search Therapists</button>
+                            <a href="#professional-help" class="professional-link">Learn about therapy types</a>
+                        </div>
+                    </div>
+                    <div class="professional-card">
+                        <div class="professional-icon counseling">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="8" y="6" width="16" height="20" rx="2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 2V6M20 2V6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 26V30M20 26V30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="professional-title">Counseling Services</h3>
+                        <p class="professional-description">Affordable counseling options including sliding scale and community services</p>
+                        <div class="professional-options">
+                            <button class="professional-btn" onclick="findCounseling()">Find Counseling</button>
+                            <a href="#professional-help" class="professional-link">Insurance coverage info</a>
+                        </div>
+                    </div>
+                    <div class="professional-card">
+                        <div class="professional-icon medication">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="10" y="8" width="12" height="16" rx="2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 8V6M16 24V26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="4" r="2" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="professional-title">Medication Management</h3>
+                        <p class="professional-description">Psychiatric services for medication evaluation and management</p>
+                        <div class="professional-options">
+                            <button class="professional-btn" onclick="findPsychiatrist()">Find Psychiatrist</button>
+                            <a href="#professional-help" class="professional-link">Medication resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Resources Section -->
+        <section class="support-resources" id="support-resources">
+            <div class="support-resources-container">
+                <div class="support-resources-header">
+                    <h2 class="support-resources-title">Support Resources</h2>
+                    <p class="support-resources-subtitle">Additional resources and tools to support your mental health journey</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <div class="resource-icon apps">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="4" y="4" width="24" height="24" rx="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10" cy="12" r="2" fill="white"/>
+                                <circle cx="22" cy="12" r="2" fill="white"/>
+                                <path d="M8 20L24 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="resource-item-title">Mental Health Apps</h3>
+                        <p class="resource-item-description">Evidence-based apps for meditation, mood tracking, and CBT exercises</p>
+                        <a href="#support-resources" class="resource-item-link">Browse Apps</a>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-icon books">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M8 6V26M24 6V26M8 6L16 2L24 6M8 26L16 30L24 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12H20M12 16H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="resource-item-title">Educational Materials</h3>
+                        <p class="resource-item-description">Books, articles, and guides to understand mental health better</p>
+                        <a href="#support-resources" class="resource-item-link">View Resources</a>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-icon community">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="8" cy="12" r="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="24" cy="12" r="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="20" r="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 16L16 16M16 16L24 16M12 8L16 16M20 8L16 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="resource-item-title">Support Groups</h3>
+                        <p class="resource-item-description">Connect with others who understand what you're going through</p>
+                        <a href="#community-support" class="resource-item-link">Find Groups</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Support Section -->
+        <section class="community-support" id="community-support">
+            <div class="community-support-container">
+                <div class="community-support-header">
+                    <h2 class="community-support-title">Community Support</h2>
+                    <p class="community-support-subtitle">You don't have to face mental health challenges alone</p>
+                </div>
+                <div class="community-grid">
+                    <div class="community-card">
+                        <div class="community-icon online">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3 class="community-title">Online Communities</h3>
+                        <p class="community-description">Safe, moderated online spaces for sharing experiences and support</p>
+                        <button class="community-btn" onclick="joinOnline()">Join Communities</button>
+                    </div>
+                    <div class="community-card">
+                        <div class="community-icon local">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3 class="community-title">Local Support</h3>
+                        <p class="community-description">Find in-person support groups and mental health events near you</p>
+                        <button class="community-btn" onclick="findLocal()">Find Local Support</button>
+                    </div>
+                    <div class="community-card">
+                        <div class="community-icon peer">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"></svg>
+                        </div>
+                        <h3 class="community-title">Peer Support</h3>
+                        <p class="community-description">Connect with trained peer specialists who have lived experience</p>
+                        <button class="community-btn" onclick="findPeer()">Find Peer Support</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contacts Section -->
+        <section class="emergency-contacts">
+            <div class="emergency-contacts-container">
+                <div class="emergency-contacts-header">
+                    <h2 class="emergency-contacts-title">Emergency Contacts</h2>
+                    <p class="emergency-contacts-subtitle">Save these numbers for immediate help in any situation</p>
+                </div>
+                <div class="emergency-grid">
+                    <div class="emergency-contact-card">
+                        <div class="emergency-contact-icon medical">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="6" y="8" width="20" height="16" rx="2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10" cy="18" r="2" fill="white"/>
+                                <circle cx="22" cy="18" r="2" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="emergency-contact-title">Medical Emergency</h3>
+                        <p class="emergency-contact-number">0-000-000-0000</p>
+                        <p class="emergency-contact-description">For life-threatening emergencies</p>
+                    </div>
+                    <div class="emergency-contact-card">
+                        <div class="emergency-contact-icon poison">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 2L22 8L16 14L10 8L16 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="22" r="6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 22H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="emergency-contact-title">Poison Control</h3>
+                        <p class="emergency-contact-number">0-000-000-0000</p>
+                        <p class="emergency-contact-description">24/7 poison emergencies</p>
+                    </div>
+                    <div class="emergency-contact-card">
+                        <div class="emergency-contact-icon domestic">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M8 12V20C8 21.1046 8.89543 22 10 22H22C23.1046 22 24 21.1046 24 20V12C24 10.8954 23.1046 10 22 10H10C8.89543 10 8 10.8954 8 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 6L12 10M20 6L20 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10" cy="18" r="1" fill="white"/>
+                                <circle cx="22" cy="18" r="1" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="emergency-contact-title">Domestic Violence</h3>
+                        <p class="emergency-contact-number">0-000-000-0000</p>
+                        <p class="emergency-contact-description">24/7 domestic violence hotline</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" fill="#7F22FE"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-mindful">Mindful</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Your trusted companion for mental health education and support. Together, we break the stigma.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-list">
+                        <li><a href="health.html">Understanding Mental Health</a></li>
+                        <li><a href="stress.html">Stress & Anxiety</a></li>
+                        <li><a href="self.html">Self-Help Tools</a></li>
+                        <li><a href="support.html">Get Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-crisis">
+                    <h3 class="footer-heading">Crisis Support</h3>
+                    <p class="crisis-label">Available 24/7 for immediate help:</p>
+                    <div class="crisis-cards">
+                        <div class="crisis-card">
+                            <span class="crisis-title">Suicide & Crisis Lifeline</span>
+                            <span class="crisis-number">000</span>
+                        </div>
+                        <div class="crisis-card">
+                            <span class="crisis-title">Crisis Text Line</span>
+                            <span class="crisis-text">Text HOME to 000000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Mindful. Not a substitute for professional medical advice. Always consult a healthcare provider.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Crisis Support Functions
+        function callCrisisLine() {
+            alert('Calling 000 - Suicide & Crisis Lifeline');
+            window.location.href = 'tel:000';
+        }
+
+        function startChat() {
+            alert('Opening crisis chat service...');
+            // In production, this would open a real chat interface
+        }
+
+        function call000() {
+            alert('Calling 000 - Suicide & Crisis Lifeline');
+            window.location.href = 'tel:000';
+        }
+
+        function textCrisis() {
+            alert('Text HOME to 000000 for crisis support');
+            // In production, this would open messaging app
+        }
+
+        function callVeterans() {
+            alert('Calling Veterans Crisis Line - Dial 000 then Press 1');
+            window.location.href = 'tel:000';
+        }
+
+        // Professional Help Functions
+        function findTherapist() {
+            alert('Searching for therapists in your area...');
+            // In production, this would open a therapist directory
+        }
+
+        function findCounseling() {
+            alert('Finding counseling services...');
+            // In production, this would show counseling options
+        }
+
+        function findPsychiatrist() {
+            alert('Finding psychiatrists near you...');
+            // In production, this would open a psychiatrist directory
+        }
+
+        // Community Support Functions
+        function joinOnline() {
+            alert('Joining online support communities...');
+            // In production, this would open community forums
+        }
+
+        function findLocal() {
+            alert('Finding local support groups...');
+            // In production, this would show local options
+        }
+
+        function findPeer() {
+            alert('Connecting with peer support specialists...');
+            // In production, this would show peer support options
+        }
+    </script>
+</body>
+</html>
